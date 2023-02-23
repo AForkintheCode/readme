@@ -8,20 +8,20 @@ function generateMarkdown(data){
   function renderLicenseBadge(license) {
      
   if (license === 'Apache'){
-    badge = `[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)]`
+    badge = `![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)`
   }
   else if (license === 'BSD' ){
-    badge = `[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)]`
+    badge = `![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)`
   }
   else if (license === 'CC'){
-    badge = `![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)]`
+    badge = `![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)`
   }
   else if (license === 'GPL'){
-    badge = `[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)]`
+    badge = `![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)`
     
   }
   else if (license === 'MIT'){
-    badge = `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]`
+    badge = `![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)`
     
   }
   else if (license === 'none' ){
@@ -76,12 +76,12 @@ let genreadme =
 
   ## Table of Contents
 
-  [Installation](#installation)
-  [Usage](#usage)
-  [Licenses](#licenses)
-  [Contributing](#contributing)
-  [Tests](#tests)
-  [Questions](#questions)
+  [Installation](#installation)\  
+  [Usage](#usage)\
+  [Licenses](#licenses)\  
+  [Contributing](#contributing)\ 
+  [Tests](#tests)\ 
+  [Questions](#questions)\ 
   
 
   ## Installation
@@ -99,7 +99,7 @@ let genreadme =
   ${data.tests}
 
   ## Questions
-  ![${data.github}](http://www.github.com/${data.github})
+  [${data.github}](http://www.github.com/${data.github})
   Please contact me @ ${data.email} if you have any further questions.`;
 
 return genreadme;
