@@ -1,9 +1,9 @@
-// TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
 const utils = require('./utils/generateMarkdown.js');
 
-// TODO: Create an array of questions for user input
+
+//questions for readme app
 const questions = [
     {
         type: 'input',
@@ -43,34 +43,33 @@ const questions = [
       },
       {
         type: 'input',
-        name: 'questions',
-        message: 'Who should we reach out to to respond?',       
+        name: 'github',
+        message: 'What is your Github username?',       
+        default: 'AForkintheCode',
+      },
+      {
+        type: 'input',
+        name: 'email',
+        message: 'What is your email address?',       
       },
     
 ];
 
-
-
-// TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    const readme = utils.generateMarkdown(data)
-    fs.writeFile('README.md', readme, (err) =>
-  err ? console.log(err) : console.log('Successfully created index.html!'))
+  const readme = utils.generateMarkdown(data)
+  fs.writeFile('README.md', readme, (err) =>
+err ? console.log(err) : console.log('Successfully created README.md'))
 }
 
-// TODO: Create a function to initialize app
+
+//start program
 function init() {
     inquirer
-  .prompt(questions)
-  .then((data) => {
-     const readme = utils.generateMarkdown(data)
-     writeToFile('README.md', readme)
+  .prompt(questions)  
+  .then((data) => {        
+    writeToFile('README.md', data)
 
-  }
-  
-  
-  )
-}
 
-// Function call to initialize app
-init();
+  })}
+
+  init();
