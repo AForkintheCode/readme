@@ -1,54 +1,9 @@
 
-
-
-
-function renderLicenseLink(license) {  
-   
-    let link;   
-  if (license === 'Apache'){
-    link = `(https://opensource.org/licenses/Apache-2.0)`
-  }
-  else if (license ==='BSD' ){
-    link = `(https://opensource.org/licenses/BSD-3-Clause)`
-  }
-  else if (license ==='CC'){
-    link = `(http://creativecommons.org/publicdomain/zero/1.0/)`
-  }
-  else if (license === 'GPL'){
-    link = `(https://www.gnu.org/licenses/gpl-3.0)`
-    
-  }
-  else if (license === 'MIT' ){
-    link = `(https://opensource.org/licenses/MIT)`
-    
-  }
-  else if (license === 'none' ){
-    link = ''
-    console.log('none listed')
-    
-  }
-return link;
-
-
-}
-
-
-function renderLicenseSection(license) {    
-
-
- `## License 
-
-  ${badge}, ${link}
- `;
-
-
-}
-
 function generateMarkdown(data){
   let license = data.license;
   let link = ''; 
   let badge = '';
-  console.log(license)
+
 
   function renderLicenseBadge(license) {
      

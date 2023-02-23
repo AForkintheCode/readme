@@ -38,8 +38,8 @@ const questions = [
       },
     {
         type: 'input',
-        name: 'contact',
-        message: '',       
+        name: 'tests',
+        message: 'Enter additional info here.',       
       },
       {
         type: 'input',
