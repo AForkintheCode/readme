@@ -1,9 +1,7 @@
-# README generator
+# PWA folio
 
   ## Description
-  This project was designed to help aid in the creation of a professional README.md for any future projects stored on github.
-  
-[README.webm](https://user-images.githubusercontent.com/96763461/221002214-f56a0574-96e8-4020-9c79-33c972a2c694.webm)
+  This is intended to utilize react to develop a progressive web application.
 
   ## Table of Contents
 
@@ -16,22 +14,22 @@
   
 
   ## Installation
-  No installation necessary, just make sure that the proper .js files and modules are  accessible.
+  Simply run the application in the web browser
 
   ## Usage
-  Launch the application from a bash terminal.
+  Navigate the application as you would any other website.  Utilize the buttons and forms for maximum user experience.
  
   ## License 
    
-  ![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg), (https://opensource.org/licenses/Apache-2.0)
+  , 
   
    
   ## Contributing
-  This project was coded by me.
+  AForkintheCode
 
   ## Tests
-  Feel free to test out the application, contact information is listed below.
+  
 
   ## Questions
   [AForkintheCode](http://www.github.com/AForkintheCode)
-  Please contact me @ cityslicker86@gmail.com if you have any further questions.
+  Please contact me @ AForkintheCode868@gmail.com if you have any further questions.
